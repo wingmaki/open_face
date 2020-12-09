@@ -41,7 +41,7 @@ if uplodeed_file is not None:
 
         draw = ImageDraw.Draw(img)
         draw.rectangle([(rect['left'],rect['top']),(rect['left'] + rect['width']),(rect['top'] + rect['height'])],fill=None,outline='green', width=5)
-        font = ImageFont.truetype("YuGothL.ttc", size=60)
+        font = ImageFont.truetype("meiryo.ttc", size=60)
         draw.text((rect['left'],rect['top']-60), 'age='+text_age, font=font, fill=(255,0,0,128))
         draw.text((rect['left'],rect['top']-120), text_gender, font=font, fill=(255,0,0,128))
     st.image(img,use_column_width=True)
